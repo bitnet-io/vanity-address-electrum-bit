@@ -1,3 +1,13 @@
+# step 1 run vanity gen
+```
+root@debian12:/media/c4pt/fedora-home/opt/vanity-address-electrum-bit# ./vanitygen BGood
+Difficulty: 4553521
+Pattern: BGood                                                                 
+Address: BGoodiXxfDQMG4MgacspVoKavxM3J3rq48
+Privkey: 6KMW4hBQ-YOUR-PRIVATE-KEY-HERE-fTUtRhZgCWpskGg64
+```
+
+
 I'd like to present a standalone command line vanity address generator 
 called vanitygen.
 
