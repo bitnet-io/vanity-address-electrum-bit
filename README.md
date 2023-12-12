@@ -1,3 +1,11 @@
+# grab the repo
+```
+git clone https://github.com/bitnet-io/vanity-address-electrum-bit
+cd https://github.com/bitnet-io/vanity-address-electrum-bit
+
+start using vanitygen or build with make
+```
+
 # step 1 run vanity gen
 ```
 root@debian12:/media/c4pt/fedora-home/opt/vanity-address-electrum-bit# ./vanitygen BGood
@@ -6,6 +14,18 @@ Pattern: BGood
 Address: BGoodiXxfDQMG4MgacspVoKavxM3J3rq48
 Privkey: 6KMW4hBQ-YOUR-PRIVATE-KEY-HERE-fTUtRhZgCWpskGg64
 ```
+# step 2 create a new wallet with CRTL-N in electrum-bit
+
+![s1](https://raw.githubusercontent.com/bitnet-io/vanity-address-electrum-bit/master/step3.png)
+
+# step 3 select import Bitnet private key
+![s1](https://raw.githubusercontent.com/bitnet-io/vanity-address-electrum-bit/master/step4.png)
+
+# step 4 paste your private key from "./vanity gen into this window"
+![s1](https://raw.githubusercontent.com/bitnet-io/vanity-address-electrum-bit/master/step5.png)
+
+# step 5 check your address is correct in the addresses tab and you are ready to start using your vanity address
+![s1](https://raw.githubusercontent.com/bitnet-io/vanity-address-electrum-bit/master/stepfinish.png)
 
 
 I'd like to present a standalone command line vanity address generator 
