@@ -1,7 +1,7 @@
 # grab the repo
 ```
 git clone https://github.com/bitnet-io/vanity-address-electrum-bit
-cd https://github.com/bitnet-io/vanity-address-electrum-bit
+cd vanity-address-electrum-bit
 
 start using vanitygen or build with make
 ```
