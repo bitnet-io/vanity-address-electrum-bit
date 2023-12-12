@@ -1,5 +1,5 @@
 /*
- * Vanitygen, vanity bitcoin address generator
+ * Vanitygen, vanity bitnet address generator
  * Copyright (C) 2011 <samr7@cs.washington.edu>
  *
  * Vanitygen is free software: you can redistribute it and/or modify
@@ -296,9 +296,9 @@ usage(const char *name)
 	fprintf(stderr,
 "Vanitygen %s (" OPENSSL_VERSION_TEXT ")\n"
 "Usage: %s [-vqnrik1NT] [-t <threads>] [-f <filename>|-] [<pattern>...]\n"
-"Generates a bitcoin receiving address matching <pattern>, and outputs the\n"
+"Generates a bitnet receiving address matching <pattern>, and outputs the\n"
 "address and associated private key.  The private key may be stored in a safe\n"
-"location or imported into a bitcoin client to spend any balance received on\n"
+"location or imported into a bitnet client to spend any balance received on\n"
 "the address.\n"
 "By default, <pattern> is interpreted as an exact prefix.\n"
 "\n"
@@ -312,7 +312,7 @@ usage(const char *name)
 "-k            Keep pattern and continue search after finding a match\n"
 "-1            Stop after first match\n"
 "-N            Generate namecoin address\n"
-"-T            Generate bitcoin testnet address\n"
+"-T            Generate bitnet testnet address\n"
 "-X <version>  Generate address with the given version\n"
 "-F <format>   Generate address with the given format (pubkey or script)\n"
 "-P <pubkey>   Specify base public key for piecewise key generation\n"
@@ -331,9 +331,9 @@ version, name);
 int
 main(int argc, char **argv)
 {
-	int addrtype = 0;
-	int scriptaddrtype = 5;
-	int privtype = 128;
+	int addrtype = 25;
+	int scriptaddrtype = 22;
+	int privtype = 158;
 	int pubkeytype;
 	enum vg_format format = VCF_PUBKEY;
 	int regex = 0;

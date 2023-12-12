@@ -1,5 +1,5 @@
 /*
- * Vanitygen, vanity bitcoin address generator
+ * Vanitygen, vanity bitnet address generator
  * Copyright (C) 2011 <samr7@cs.washington.edu>
  *
  * Vanitygen is free software: you can redistribute it and/or modify
@@ -1354,11 +1354,11 @@ vg_prefix_context_add_patterns(vg_context_t *vcp,
 			}
 		}
 
-		if (ret == -2) {
-			fprintf(stderr,
-				"Prefix '%s' not possible\n", patterns[i]);
-			impossible++;
-		}
+		//if (ret == -2) {
+		//	fprintf(stderr,
+		//		"Prefix '%s' not possible\n", patterns[i]);
+		//	impossible++;
+		//}
 
 		if (!vp)
 			continue;
@@ -1387,10 +1387,10 @@ vg_prefix_context_add_patterns(vg_context_t *vcp,
 	vcpp->base.vc_npatterns_start += npfx;
 
 	if (!npfx && impossible) {
-		const char *ats = "bitcoin", *bw = "\"1\"";
+		const char *ats = "bitnet", *bw = "\"B\"";
 		switch (vcpp->base.vc_addrtype) {
 		case 5:
-			ats = "bitcoin script";
+			ats = "bitnet script";
 			bw = "\"3\"";
 			break;
 		case 111:
